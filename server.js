@@ -56,6 +56,12 @@ app.get('/about', function(req, res){
     });
 });
 
+app.get('/projects', function(req, res){
+    res.render('projects', {
+        pagetitle: 'Projects'
+    });
+});
+
 app.get('/bad', function(req, res){
     res.send({
         err: 'No Page'
